@@ -1,0 +1,15 @@
+Model,MAE_millions,RMSE_millions,MAPE_percent,RMSE_improvement_vs_naive_percent
+LSTM (30 lags),54.432,69.058,11.708,24.195
+30-day moving average,54.554,69.167,11.805,24.075
+"Log-ARIMA(2, 1, 3)",54.357,69.176,11.594,24.066
+"Log-SARIMA(1, 0, 1)x(1, 0, 0, 7)",54.449,69.25,11.502,23.985
+LSTM (14 lags),54.782,69.388,11.761,23.833
+Log-Holt-Winters additive 7-day,55.001,70.592,11.462,22.512
+"Univariate MLP (14 lags, 64 units)",56.423,71.34,11.938,21.691
+Simple RNN (14 lags),55.352,71.493,11.784,21.522
+CNN Conv1D (14 lags),57.526,72.603,12.11,20.304
+Multi-headed MLP (demand/price/product/bag heads),59.039,74.919,12.696,17.762
+Multivariate MLP (14 lags),61.773,75.886,13.29,16.701
+Naive last value,72.02,91.1,14.024,0.0
+Seasonal naive 7-day,79.751,100.775,16.87,-10.62
+"Log-STL + ARIMA(2, 1, 3)",83.725,104.828,17.836,-15.069
