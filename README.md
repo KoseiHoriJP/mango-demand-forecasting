@@ -1,5 +1,7 @@
 # Mango Sales Demand Forecasting
 
+**English** | [日本語](README.ja.md)
+
 An end-to-end time-series project that forecasts daily mango sales volume and compares interpretable statistical methods with modern neural networks on the same future holdout period.
 
 ![Actual and forecast mango demand](assets/actual_vs_forecast.png)
